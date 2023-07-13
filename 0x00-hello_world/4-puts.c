@@ -1,9 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
 
+/**
+ * main - Entry point
+ *
+ * Description - puts() function returns string
+ *
+ * Return : Always 0 (success)
+ */
 int main(void)
-	{
-		const char myString[150] = "\"Programming is like building a multilingual puzzle";
-		puts(myString);
-		return (0);
-	}
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
+}
