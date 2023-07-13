@@ -1,10 +1,11 @@
 #include <stdio.h>
-/*
+
+/**
  * main - Entry Point
  *
  * Description - main function prints string to standard output
  *
- * Return : Always 0 (success)
+ * Return: 0
  *
  */
 

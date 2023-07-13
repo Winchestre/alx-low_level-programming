@@ -5,7 +5,7 @@
  *
  * Description - puts() function returns string
  *
- * Return - EXIT STATUS 0 (success)
+ * Return: 0
  */
 int main(void)
 {
