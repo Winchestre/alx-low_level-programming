@@ -11,7 +11,7 @@ int main(void)
 
 	for (a = 0; a < 100; a++)
 	{
-		for (b = 0; b < 100; b++)
+		for (b = a; b < 100; b++)
 		{
 			if (a != b)
 			{
@@ -21,7 +21,7 @@ int main(void)
 				putchar(b / 10 + '0');
 				putchar(b % 10 + '0');
 
-				if (a * 100 + b != 9998)
+				if (a * 100 + b != 9899)
 				{
 					putchar(',');
 					putchar(' ');
