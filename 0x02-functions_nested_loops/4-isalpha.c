@@ -7,23 +7,11 @@
  */
 int _isalpha(int c)
 {
-	char i;
 
-	for (i = 'A'; i <= 'Z'; i++)
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 	{
-		if (i == c)
-		{
-			return (1);
-		}
-			return (0);
+		return (1);
 	}
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		if (c == i)
-		{
-			return (1);
-		}
-			return (0);
-	}
+		return (0);
 
 }
