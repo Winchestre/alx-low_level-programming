@@ -1,26 +1,25 @@
-#include <stdio.h>
+#include <main.h>
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
- * Description - Print lowercase alphabets with new line
+ * Description - function prints lowercase alphabet
  *
  * Return: 0
  *
- */
-int print_alphabet();
-int main(void)
+ */	
+void print_alphabet(void)
 {
-	print_alphabet();
+	char ch;
 
-	return (0);
-}
-int print_alphabet()
-{
-	char ch = 'a';
+	ch = 'a';
+
 	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
 	putchar('\n');
+}
+print_alphabet();
+return (0);
 }
