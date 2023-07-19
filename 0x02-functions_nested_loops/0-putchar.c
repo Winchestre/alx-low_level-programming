@@ -1,15 +1,20 @@
 #include "main.h"
 /**
  * main - Entry point
- *
- * Description - Print '_putchar' to standard output
- *
+ * Description: 'Prints _putchar to standard output'
  * Return: 0
- *
  */
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar('-');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
