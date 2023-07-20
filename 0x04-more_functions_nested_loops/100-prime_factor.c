@@ -7,18 +7,26 @@
  */
 int main(void)
 {
-	long int num, f_num;
+	long num; 
+	int f_num;
 
 	num = 612852475143;
-	for (f_num = 2; f_num <= num; f_num++)
+	while (f_num++ < num / 2)
 	{
 		if (num % f_num == 0)
 		{
-			num /= f_num;
-			f_num--;
+			num /= 2;
+			continue;
+		}
+		for (f_num = 3; f_num < num / 2; f_num += 2)
+		{
+			if (num % f_num == 0)
+			{
+				num /= f_num;
+			}
 		}
 	}
-	printf("%ld\n", f_num);
+	printf("%ld\n", num);
 
 	return (0);
 		
