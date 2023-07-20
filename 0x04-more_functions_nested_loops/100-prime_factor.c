@@ -5,9 +5,10 @@
  * main - print largest prime factor
  * Return: Always 0
  */
+
 int main(void)
 {
-	long num; 
+	long num;
 	int f_num;
 
 	num = 612852475143;
@@ -29,5 +30,4 @@ int main(void)
 	printf("%ld\n", num);
 
 	return (0);
-		
 }
