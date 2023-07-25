@@ -5,7 +5,7 @@
  * @s: pointer to string
  * Return: lengthof string
  */
-int _strlen(char *S)
+int _strlen(char *s)
 {
 	int counter;
 
