@@ -28,7 +28,7 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			num = s[i] - '0';
-			if (d % 2 == 0)
+			if (d % 2)
 			{
 				num = -num;
 			}
