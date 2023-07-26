@@ -5,7 +5,7 @@
  * print_array - prints n elements of an array
  * @a: array input argument
  * @n: input n elements
- * Return: no return
+ * Return: a and n inputs
  */
 void print_array(int *a, int n)
 {
@@ -18,6 +18,6 @@ void print_array(int *a, int n)
 		{
 			printf("%d", a[n - 1]);
 		}
-			printf("\n");
 	}
+	printf("\n");
 }
