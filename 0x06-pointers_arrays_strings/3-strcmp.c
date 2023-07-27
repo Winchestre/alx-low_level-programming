@@ -5,7 +5,7 @@
  * @s1: input argument
  * @s2: input argument
  *
- * Return: s1[i] - s2[i]
+ * Return: Always 0
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -20,4 +20,6 @@ int _strcmp(char *s1, char *s2)
 		}
 		i++;
 	}
+
+	return (0);
 }
