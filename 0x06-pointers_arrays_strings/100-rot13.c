@@ -3,13 +3,13 @@
 /**
  * rot13 - encoding using rot13
  * @s: variable argument
- *Return: Always 0
+ *Return: s argument
  */
 char *rot13(char *s)
 {
 	int i, j;
 	char alpha[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	i = 0;
 	while (*(s + i) != '\0')
@@ -26,5 +26,4 @@ char *rot13(char *s)
 	}
 
 	return (s);
-
 }
