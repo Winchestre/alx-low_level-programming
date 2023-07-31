@@ -5,17 +5,15 @@
  * @dest: input arg
  * @src: input arg
  * @n: input arg
- * Return: Always 0
+ * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int i, j;
+	unsigned int i;
 	
-	j = n;
-	for (i = 0; i < j; i++)
+	for (i = 0; i < n; i++)
 	{
-		dest[i] = src[i];
-		n--;
+		*(dest + i) = *(src + i);
 	}
 
 	return (dest);
