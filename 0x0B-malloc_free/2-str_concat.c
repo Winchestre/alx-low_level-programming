@@ -16,27 +16,17 @@ char *str_concat(char *s1, char *s2)
 	size2 = 0;
 	ptr = s1;
 	if (s1)
-	{
-		while (*ptr++)
-		{
+	:wq	while (*ptr++)
 			size1++;
-		}
-	} else
-	{
+	else
 		s1 = "";
-	}
 
 	ptr = s2;
 	if (s2)
-	{
 		while (*ptr++)
-		{
 			size2++;
-		}
-	} else
-	{
+	else
 		s2 = "";
-	}
 
 	ret = malloc(size1 + size2 + 1);
 	if (!ret)
