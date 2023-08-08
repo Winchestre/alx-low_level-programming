@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	size2 = 0;
 	ptr = s1;
 	if (s1)
-	:wq	while (*ptr++)
+		while (*ptr++)
 			size1++;
 	else
 		s1 = "";
