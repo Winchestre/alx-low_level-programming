@@ -5,7 +5,7 @@
  * free_dog - frees malloc to struct dog
  * @d: dog instance
  */
-void free_dogs(dog_t *d)
+void free_dog(dog_t *d)
 {
 	if (d)
 	{
