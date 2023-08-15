@@ -8,10 +8,12 @@
  */
 int _strlen(char *s)
 {
-	int i = 0;
+	int i;
 
+	i = 0;
 	while (s[i] != '\0')
 		i++;
+
 	return (i);
 }
 
@@ -52,15 +54,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	name_len = _strlen(name);
 	owner_len = _strlen(owner);
 	dog = malloc(sizeof(dog_t));
+
 	if (dog == NULL)
 		return (NULL);
 	dog->name = malloc(sizeof(char) * (name_len + 1));
+
 	if (dog->name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
 	dog->owner = malloc(sizeof(char) * (owner_len + 1));
+
 	if (dog->owner == NULL)
 	{
 		free(dog);
