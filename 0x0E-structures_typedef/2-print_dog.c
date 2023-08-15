@@ -5,8 +5,6 @@
 /**
  * print_dog - prints a struct dog
  * @*d: struct dog pointer variable argument
- *
- * Return: nil for a NULL element of d, nothing if d is NULL
  */
 void print_dog(struct dog *d)
 {
