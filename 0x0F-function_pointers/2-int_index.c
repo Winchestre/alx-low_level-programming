@@ -1,10 +1,10 @@
 #include "function_pointers.h"
 
 /**
- * imt_index - searches for an integer.
+ * int_index - searches for an integer.
  * @array: input integer array argument
- * @size: size of array argument                    * @cmp: pointer to the function
- *
+ * @size: size of array argument
+ * @cmp: pointer to the function
  * Return: index of first element for which the cm
  * function does not return 0. If no element match
  * , return -1. If size <= 0, return -1.
