@@ -7,10 +7,10 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	unsigned int i, j, k;
+	unsigned int i = 0, j, k = 0;
         char *s;
         const char arg_type[] = "cifs";
-	i = k = 0;
+
 	va_start(ap, format);
 	while (format && format[i])
 	{
