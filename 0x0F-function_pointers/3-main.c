@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
- * main - get_op_func has operators correlated wit
+ * main - get_op_func has operators correlated with
  * func signs and funcs from op_func
  * if not 4 arguments, return Error & exit 98
  * if op is null, return Error & exit 99
