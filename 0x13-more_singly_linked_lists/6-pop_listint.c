@@ -11,15 +11,15 @@ int pop_listint(listint_t **head)
 	int h_node;
 	listint_t *h;
 	listint_t *actv;
-	
+
 	if (*head == NULL)
 		return (0);
-	
+
 	actv = *head;
 	h_node = actv->n;
 	h = actv->next;
 	free(actv);
 	*head = h;
-	
-	return (h_node); 
- }
+
+	return (h_node);
+}
