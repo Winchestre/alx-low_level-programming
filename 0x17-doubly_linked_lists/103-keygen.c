@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	unsigned int i, j;
 	size_t length, sum;
-	char *code = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+	char *code = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOG\rJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char p[7] = "      ";
 
 	if (argc != 2)
