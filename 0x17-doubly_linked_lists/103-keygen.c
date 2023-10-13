@@ -12,9 +12,10 @@ int main(int argc, char *argv[])
 {
 	unsigned int i, j;
 	size_t length, sum;
-	char *code = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+	char *code = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJ
+		cYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char p[7] = "      ";
-	
+
 	if (argc != 2)
 	{
 		printf("Correct usage: ./keygen5 username\n");
@@ -29,8 +30,10 @@ int main(int argc, char *argv[])
 		j *= argv[1][i];
 	p[2] = code[(j ^ 85) & 63];
 	for (j = argv[1][0], i = 0; i < length; i++)
-		if ((char)j <= argv[1][i]) 
-                         j = argv[1][i];
+	{
+		if ((char)j <= argv[1][i])
+			j = argv[1][i];
+	}
 	srand(j ^ 14);
 	p[3] = code[rand() & 63];
 	for (j = 0, i = 0; i < length; i++)
